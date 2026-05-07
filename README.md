@@ -21,6 +21,8 @@ You point it at a website once (by writing down a handful of CSS selectors), the
 
 The admin UI talks to the API over HTTP for CRUD on jobs/websites/listings/runs, and over SignalR (`/hubs/scrap-events`) for live test-run streaming.
 
+Presenting one test UI-based feature for testing scrapers:
+![Test-run](docs/test-run-demo.png)
 
 ## Tech stack
 
