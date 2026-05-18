@@ -10,7 +10,7 @@ COPY . .
 RUN dotnet publish -c Release -o /out
 
 # Install Playwright Chromium and all OS dependencies during the build stage.
-# Browser binaries are copied to the runtime image — no SDK needed at runtime.
+# Browser binaries are copied to the runtime image - no SDK needed at runtime.
 ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
 RUN /root/.nuget/packages/microsoft.playwright/1.59.0/.playwright/node/linux-x64/node \
     /root/.nuget/packages/microsoft.playwright/1.59.0/.playwright/package/cli.js \

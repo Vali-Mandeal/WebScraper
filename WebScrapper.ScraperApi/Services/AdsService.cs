@@ -160,7 +160,7 @@ public class AdsService : IAdsService
     private static bool ContainsAsWord(string? title, string keyword)
     {
         // For purely numeric keywords (e.g. "16", "6") word boundaries are useless
-        // because a digit run is treated as one "word" — `\b16\b` won't fire inside
+        // because a digit run is treated as one "word" - `\b16\b` won't fire inside
         // "16TB" or "16MB". Use a digit boundary instead so adjacent digits block
         // the match (so "6" doesn't match "16") but adjacent letters do not.
         var pattern = keyword.All(char.IsDigit)

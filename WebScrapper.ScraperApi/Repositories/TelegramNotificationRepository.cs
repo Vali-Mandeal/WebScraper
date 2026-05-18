@@ -61,7 +61,7 @@ public class TelegramNotificationRepository : INotificationRepository
     private static string GetTelegramBody(List<Ad> ads, ScrapJob scrapJob)
     {
         var lines = new StringBuilder();
-        lines.AppendLine($"🔍 <b>{Escape(scrapJob.Name)}</b> — {ads.Count} new ad{(ads.Count > 1 ? "s" : "")}");
+        lines.AppendLine($"🔍 <b>{Escape(scrapJob.Name)}</b> - {ads.Count} new ad{(ads.Count > 1 ? "s" : "")}");
         lines.AppendLine();
 
         foreach (var ad in ads)

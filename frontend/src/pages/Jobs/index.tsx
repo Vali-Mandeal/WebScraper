@@ -121,7 +121,7 @@ export function JobsPage() {
                     {job.name}
                   </td>
                   <td className="px-4 py-3.5 text-zinc-400 whitespace-nowrap">
-                    {job.websiteName ?? "—"}
+                    {job.websiteName ?? "-"}
                   </td>
                   <td className="px-4 py-3.5">
                     <span className="font-mono text-xs text-zinc-400 bg-zinc-800/60 px-2 py-0.5 rounded">
@@ -129,7 +129,7 @@ export function JobsPage() {
                     </span>
                   </td>
                   <td className="px-4 py-3.5 text-zinc-400 whitespace-nowrap tabular-nums">
-                    {job.maxPrice ? `${job.maxPrice} lei` : <span className="text-zinc-600">—</span>}
+                    {job.maxPrice ? `${job.maxPrice} lei` : <span className="text-zinc-600">-</span>}
                   </td>
                   <td className="px-4 py-3.5">
                     <Switch
